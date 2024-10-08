@@ -86,11 +86,5 @@ The API uses FastAPI's BackgroundTasks to manage file expiration. Uploaded files
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-## Contributing
 
-Feel free to submit pull requests or open issues to improve this project.
-
-## Contact
-
-For questions or suggestions, contact [[your-email@example.com](mailto\:your-email@example.com)].
 

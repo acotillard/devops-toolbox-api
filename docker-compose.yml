@@ -1,0 +1,11 @@
+version: '3'
+services:
+  myip-api:
+    image: python:3.9-slim
+    working_dir: /app
+    volumes:
+      - ./app:/app
+    ports:
+      - "8000:8000"
+    command: ["sh", "-c", "pip install --no-cache-dir fastapi uvicorn geoip2 pyOpenSSL python-multipart && python -m uvicorn api_app:app --host 0.0.0.0 --port 8000"]
+

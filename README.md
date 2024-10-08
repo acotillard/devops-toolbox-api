@@ -1,4 +1,4 @@
-# devops-toolbox-api
+# Super Tool API for DevOps
 
 This project is a comprehensive toolbox API for DevOps teams, providing multiple utilities such as IP address calculations, public IP geolocation, SSL certificate information, and a temporary file sharing service. The API is built using **FastAPI** and can be easily deployed using **Docker** and **Docker Compose**.
 
@@ -20,6 +20,10 @@ This project is a comprehensive toolbox API for DevOps teams, providing multiple
     - **GeoLite2-ASN.mmdb**
   - Place these files in the `app` directory of this project.
 
+## Swagger Documentation
+
+A Swagger UI is provided to easily explore and test the available API endpoints. You can access it at `http://localhost:8000/docs`.
+
 ## Setup and Installation
 
 Follow these steps to set up and run the API locally:
@@ -33,7 +37,7 @@ Follow these steps to set up and run the API locally:
 
 2. **Download MaxMind Databases**:
 
-   - Download **GeoLite2-City.mmdb** and **GeoLite2-ASN.mmdb** from your MaxMind account. ( will managed automaticaly in the futur )
+   - Download **GeoLite2-City.mmdb** and **GeoLite2-ASN.mmdb** from your MaxMind account.
    - Place these databases in the `app` directory of the project:
      ```
      devops-toolbox-api/
@@ -85,6 +89,3 @@ The API uses FastAPI's BackgroundTasks to manage file expiration. Uploaded files
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
-
-
